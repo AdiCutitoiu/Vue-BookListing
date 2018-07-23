@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import BookItem from './BookItem';
+import BookItem from "./BookItem";
 
 export default {
   name: "BookItem",
@@ -19,7 +19,10 @@ export default {
         { title: "Self-Reliance", author: "Ralph Waldo Emerson" },
         { title: "American Gods", author: "Neil Gaiman" },
         { title: "Amusing Ourselves to Death", author: "Neil Postman" }
-      ]
+      ],
+      components: {
+        BookItem
+      }
     };
   }
 };
@@ -35,5 +38,4 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-
 </style>
